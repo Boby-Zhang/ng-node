@@ -5,7 +5,7 @@ var methodOverride = require('method-override');
 var path = require('path');
 //logs
 var margan = require('morgan');
-//mongodb drive
+//mongodb driver
 var mongoskin = require('mongoskin');
 
 
