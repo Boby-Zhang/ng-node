@@ -3,7 +3,7 @@ angularjs nodejs express@4
 
 ####仅用于学习与分享
 
-#1，克隆代码
+#1 克隆代码
   git clone https://github.com/Boby-Zhang/ng-node
 
 #2 install
