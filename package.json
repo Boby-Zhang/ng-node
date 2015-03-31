@@ -1,12 +1,17 @@
 {
-	"name":"ng-node",
-	"main":"server.js",
-	"author":"boby-zhang",
-	"version":"0.0.1",
-	"scripts":{
-		"start":"node server.js"
-	},
-	"dependencies":{
-
-	}
+  "name": "ng-node",
+  "main": "server.js",
+  "author": "boby-zhang",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.12.2",
+    "express": "^4.12.3",
+    "method-override": "^2.3.2",
+    "mongoose": "^4.0.1",
+    "morgan": "^1.5.2",
+    "path": "^0.11.14"
+  }
 }

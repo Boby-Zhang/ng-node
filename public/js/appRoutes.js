@@ -1,0 +1,16 @@
+angular.module('appRoutes',['ngRoute'])
+	.config(['$routeProvider','$locationProvider',function($routeProvider,$locationProvider){
+		$routeProvider.when('/',{
+			templateUrl:'views/home.html',
+			controller:'mainController'
+		})
+		.when('/users',{
+			templateUrl:'views/users.html',
+			controller:'userController'
+		})
+		.when('/cars',{
+			templateUrl:'views/cars.html',
+			controller:'carController'
+		});
+		$locationProvider.html5Mode(true);
+	}])

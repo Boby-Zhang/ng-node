@@ -1,0 +1,14 @@
+{
+  "name": "angular",
+  "version": "1.0.0",
+  "homepage": "https://github.com/Boby-Zhang/ng-node",
+  "authors": [
+    "boby-zhang"
+  ],
+  "main": "angular",
+  "dependencies":{
+  	"bootstrap":"latest",
+  	"angular":"latest",
+  	"angular-route":"latest"
+  }
+}

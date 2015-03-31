@@ -5,7 +5,7 @@ var methodOverride = require('method-override');
 var path = require('path');
 //logs
 var margan = require('morgan');
-var database = require('./config/db');
+var database = require('./config/database');
 //mongodb driver
 var mongoose = require('mongoose');
 mongoose.connect(database.url);//connect to mongodb
@@ -14,7 +14,7 @@ mongoose.connect(database.url);//connect to mongodb
 
 var port = process.env.PORT || 8088;
 //serve static directory 
-app.use(exress.static(path.join(__dirname,'public')));
+app.use(express.static(path.join(__dirname,'public')));
 app.use(margan('dev'));
 //parse request bodies (req.body)
 app.use(bodyParser.urlencoded({'extended':'true'}));//parse application/x-www-form-urlencoded

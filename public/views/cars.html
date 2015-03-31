@@ -1,0 +1,41 @@
+<div>
+	<div class="text-center">
+	<h1>汽车数量 <span class="label label-info">{{cars.length}}</span></h1>
+	</div>
+
+
+	<div class="checkbox" ng-repeat = "car in cars">
+		<label>
+			<input type="checkbox"ng-click="deleteCar(car._id)"> 
+			{{car.name}}
+			<br>{{car.price}}
+			<br>{{car.color}}
+		</label>
+	</div>
+
+	<p class="text-center" ng-show="loading">
+		<span class="fa fa-spinner fa-spin fa-3x">loading</span>
+	</p>	
+
+	<div>
+		<div>
+			<form>
+				<div class="from-group">
+					<label>name:</label>
+					<input type="text" class="form-control input-lg text-center"  placeholder = "name" ng-model="formData.name">
+
+				</div>
+				<div class="from-group">
+					<label>price:</label>
+					<input type="text" class="form-control input-lg text-center" placeholder= "price" ng-model="formData.price">
+				</div>
+				<div class="from-group">
+					<label>color:</label>
+					<input type="text" class="form-control input-lg text-center" placeholder= "color" ng-model="formData.color">
+				</div>
+				<button type="submit" class="btn btn-primary btn-lg" ng-click="createCar()">Add</button>
+			</form>
+
+		</div>
+	</div>
+</div>

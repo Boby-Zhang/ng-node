@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<base href="/">
+		<title>NgNode App</title>
+
+		<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+
+		<script src="libs/angular/angular.min.js"></script>
+		<script src="libs/angular-route/angular-route.min.js"></script>
+
+		<script src="js/controllers/main_controller.js"></script>
+		<script src="js/controllers/user_controller.js"></script>
+		<script src="js/controllers/car_controller.js"></script>
+		<script src="js/services/user_service.js"></script>
+		<script src="js/services/car_service.js"></script>
+		<script src="js/appRoutes.js"></script>
+		<script src="js/main.js"></script>
+	</head>	
+	<body ng-app="user_app" ng-controller="userController">
+		<div class="container">
+			<nav class="navbar navbar-inverse">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="/">首页</a>
+				</div>
+				<ul class ="nav navbar-nav">
+					<li><a href="/users">用户</a></li>
+					<li><a href="/cars">汽车</a></li>
+				</ul>
+			</nav>
+			<div ng-view></div>
+
+		</div>
+	</body>
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

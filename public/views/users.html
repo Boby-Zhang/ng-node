@@ -1,0 +1,97 @@
+
+<div>
+	<div class="text-center">
+		<h1>用户数量 <span class="label label-info">{{users.length}}</span></h1>
+	</div>
+	
+	
+	<div class="checkbox" ng-repeat = "user in users">
+		<label>
+			<input type="checkbox"ng-click="deleteUser(user._id)"> {{user.name}}<br>{{user.mobile}}
+		</label>
+	</div>
+
+	<p class="text-center" ng-show="loading">
+		<span class="fa fa-spinner fa-spin fa-3x">loading</span>
+	</p>	
+
+	<div>
+		<div>
+			<form>
+				<div class="from-group">
+					<label>name:</label>
+					<input type="text" class="form-control input-lg text-center"  placeholder = "name" ng-model="formData.name">
+					
+				</div>
+				<div class="from-group">
+					<label>mobile:</label>
+					<input type="text" class="form-control input-lg text-center" placeholder= "mobile" ng-model="formData.mobile">
+				</div>
+				<button type="submit" class="btn btn-primary btn-lg" ng-click="createUser()">Add</button>
+			</form>
+
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
