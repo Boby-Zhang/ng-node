@@ -10,7 +10,6 @@
 
 		<script src="libs/angular/angular.min.js"></script>
 		<script src="libs/angular-route/angular-route.min.js"></script>
-
 		<script src="js/controllers/main_controller.js"></script>
 		<script src="js/controllers/user_controller.js"></script>
 		<script src="js/controllers/car_controller.js"></script>
@@ -20,7 +19,47 @@
 		<script src="js/main.js"></script>
 	</head>	
 	<body ng-app="user_app" ng-controller="userController">
+
+		<div class="header">
+			<div class="navbar navbar-default" role="navigation">
+				<div class="container">
+					<div class="navbar-header">
+
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+
+						<a class="navbar-brand" href="/">Ng-Node</a>
+					</div>
+
+					<div class="collapse navbar-collapse" id="js-navbar-collapse">
+
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="/">Home</a></li>
+							<li><a ng-href="/users">用户</a></li>
+							<li><a ng-href="/cars">汽车</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="container">
+			<div ng-view=""></div>
+		</div>
+
+		<div class="footer">
+			<div class="container">
+				<p><span class="glyphicon glyphicon-heart"></span> 仅用于学习 </p>
+			</div>
+		</div>
+
+
+
+
+<!-- 		<div class="container">
 			<nav class="navbar navbar-inverse">
 				<div class="navbar-header">
 					<a class="navbar-brand" href="/">首页</a>
@@ -28,11 +67,14 @@
 				<ul class ="nav navbar-nav">
 					<li><a href="/users">用户</a></li>
 					<li><a href="/cars">汽车</a></li>
+					
 				</ul>
 			</nav>
 			<div ng-view></div>
 
-		</div>
+		</div> -->
+		<script src="libs/jquery/dist/jquery.js"></script>
+		 <script src="libs/bootstrap/dist/js/bootstrap.js"></script>
 	</body>
 
 
